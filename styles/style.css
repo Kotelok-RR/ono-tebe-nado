@@ -255,11 +255,6 @@ html {
     width: 230px;
 }
 
-.footer-navigation {
-    list-style: none;   
-    text-align: center;
-}
-
 .footer-social-media {
     display: flex;
     justify-content: space-between;
@@ -270,4 +265,9 @@ html {
 .footer-social-media>* {
     width: 48px;
     height: 48px;
+}
+
+.footer-navigation {
+    list-style: none;   
+    text-align: center;
 }
