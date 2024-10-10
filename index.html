@@ -13,12 +13,12 @@
     <header class="header">
       <nav>
         <ul class="header-navigation">
-          <li><a href="#main-cover-link">главная</a></li>
-          <li><a href="#main-lots-link">посмотреть лоты</a></li>
-          <li><a href="#main-about-link">об аукционе</a></li>
+          <li style="list-style: none;"><a href="#main-cover-link" style="text-decoration: none;">главная</a></li>
+          <li style="list-style: circle;"><a href="#main-lots-link">посмотреть лоты</a></li>
+          <li style="list-style: circle;"><a href="#main-about-link">об аукционе</a></li>
         </ul>
       </nav>
-      <div class="logo">
+      <div class="header-logo">
         <a href="#"><img src="images/logo-black.svg" alt="Черный логотип"></a>
       </div>
       <div class="header-about">
@@ -28,40 +28,37 @@
       </div>
     </header>
     <main class="main">
-
       <div class="main-cover" id="main-cover-link">
-        <img src="images/cover.jpg" alt="Яркое фоновое изображение красками" class="background-img-brightness-low">
+        <div class="main-cover-image background-img-brightness-low"></div>
         <h1 class="main-cover-text">
-          <span class="main-cover-text-it">  
-            <span class="main-cover-text-it-part-1">О</span><span class="main-cover-text-it-part-2">НО</span>
+          <span class="main-cover-text__align-left">
+            <span style="letter-spacing: 30px;">О</span><span style="letter-spacing: 60px;">НО</span>
           </span>
-          <span class="main-cover-text-you">
-            <span class="main-cover-text-you-part-1">ТЕ</span><span class="main-cover-text-you-part-2">БЕ</span>
+          <span class="main-cover-text__align-center">
+            <span style="letter-spacing: 30px;">ТЕ</span><span style="letter-spacing: 60px;">БЕ</span>
           </span>
-          <span class="main-cover-text-need">
-            <span class="main-cover-text-need-part-1">Н</span><span class="main-cover-text-need-part-2">АДО</span>
+          <span class="main-cover-text__align-right">
+            <span style="letter-spacing: 60px;">Н</span><span style="letter-spacing: 30px;">АДО</span>
           </span>
         </h1>
-        <p class="main-cover-phrase">
-          Аукцион вещей, в которые никто не верил
-        </p>
-        <div class="main-cover-make-bet">
-          <div class="main-cover-make-bet-container"></div>
-          <p class="main-cover-make-bet-text">
-            Сделать ставку
+        <div class="main-cover-description">
+          <p class="main-cover-description-phrase">
+            Аукцион вещей, в которые никто не верил
           </p>
+          <div>
+            <p class="main-cover-description-make-bet-text">
+              Сделать ставку
+            </p>
+          </div>
         </div>
       </div>
-
       <div class="main-lots" id="main-lots-link">
         <h2 class="main-lots-title">
           Лоты
         </h2>
         <div class="main-lots-cards">
-          <section class="main-lots-cards-1">
-            <div class="main-lots-cards-container">
-              <img src="images/card-lot-01.jpg" alt="Фоновое изображение карточки 1" class="background-img-brightness-low">
-            </div>
+          <section class="main-lots-cards-template">
+            <div class="background-img-brightness-low main-lots-cards__align-left"></div>
             <p class="main-lots-cards-title">
               Фильм режиссёра, который бросил киношколу
             </p>
@@ -69,10 +66,8 @@
               Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
             </p>
           </section>
-          <section class="main-lots-cards-2">
-            <div class="main-lots-cards-container">
-              <img src="images/card-lot-02.jpg" alt="Фоновое изображение карточки 2" class="background-img-brightness-low">
-            </div>
+          <section class="main-lots-cards-template">
+            <div class="background-img-brightness-low main-lots-cards__align-center"></div>
             <p class="main-lots-cards-title">
               Книга, где описан один скучный день из жизни рекламного агента
             </p>
@@ -80,10 +75,8 @@
               Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?
             </p>
           </section>
-          <section class="main-lots-cards-3">
-            <div class="main-lots-cards-container">
-              <img src="images/card-lot-03.jpg" alt="Фоновое изображение карточки 3" class="background-img-brightness-low">
-            </div>
+          <section class="main-lots-cards-template">
+            <div class="background-img-brightness-low main-lots-cards__align-right"></div>
             <p class="main-lots-cards-title">
               Картина, которую повторит даже 5-летний сын маминой подруги
             </p>
@@ -106,8 +99,8 @@
         <div class="main-about-text">
           <h2 class="main-about-text-title">Об аукционе</h2>
           <div class="main-about-text-paragraphs">
-            <p class="main-about-text-paragraphs-1">Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?</p>
-            <p class="main-about-text-paragraphs-2">Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотряна критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми. </p>
+            <p style="padding-bottom: 24px;">Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?</p>
+            <p>Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотряна критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми. </p>
           </div>
         </div>
       </div>
@@ -120,15 +113,15 @@
       </div>
       <nav>
         <ul class="footer-navigation">
-          <li><a href="#main-cover-link">главная</a></li>
+          <li><a href="#main-cover-link" style="text-decoration: none;">главная</a></li>
           <li><a href="#main-lots-link">посмотреть лоты</a></li>
           <li><a href="#main-about-link">об аукционе</a></li>
         </ul>
-      </nav>
+      </nav>  
       <div class="footer-social-media">
-        <a href="#"><img src="images/pinterest.svg" alt="Изображение-ссылка Pinterest"></a>
-        <a href="#"><img src="images/vk.svg" alt="Изображение-ссылка VK"></a>
-        <a href="#"><img src="images/yt.svg" alt="Изображение-ссылка YouTube"></a>
+        <a target="_blank"><img src="images/yt.svg" alt="Изображение-ссылка YouTube"></a>
+        <a target="_blank"><img src="images/vk.svg" alt="Изображение-ссылка VK"></a>
+        <a target="_blank"><img src="images/pinterest.svg" alt="Изображение-ссылка Pinterest"></a>
       </div>
     </footer>
   </body>
