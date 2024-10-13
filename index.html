@@ -13,9 +13,9 @@
     <header class="header">
       <nav>
         <ul class="header-navigation">
-          <li style="list-style: none;"><a href="#main-cover-link" style="text-decoration: none;">главная</a></li>
-          <li style="list-style: circle;"><a href="#main-lots-link">посмотреть лоты</a></li>
-          <li style="list-style: circle;"><a href="#main-about-link">об аукционе</a></li>
+          <li class="list-style-none"><a href="#main-cover-link" class="text-default">главная</a></li>
+          <li class="list-style-circle"><a href="#main-lots-link">посмотреть лоты</a></li>
+          <li class="list-style-circle"><a href="#main-about-link">об аукционе</a></li>
         </ul>
       </nav>
       <div class="header-logo">
@@ -28,17 +28,17 @@
       </address>
     </header>
     <main class="main">
-      <section class="main-cover" id="main-cover-link">
-        <div class="main-cover-image background-img-brightness-low"></div>
+      <section class="main-cover  main-cover-image" id="main-cover-link">
+        <div class="background-img-brightness-low"></div>
         <h1 class="main-cover-text">
           <span class="main-cover-text__align-left">
-            <span style="letter-spacing: 30px;">о</span><span style="letter-spacing: 60px;">но</span>
+            <span class="letter-spacing__low-gap">о</span><span class="letter-spacing__high-gap">но</span>
           </span>
           <span class="main-cover-text__align-center">
-            <span style="letter-spacing: 30px;">те</span><span style="letter-spacing: 60px;">бе</span>
+            <span class="letter-spacing__low-gap">те</span><span class="letter-spacing__high-gap">бе</span>
           </span>
           <span class="main-cover-text__align-right">
-            <span style="letter-spacing: 60px;">н</span><span style="letter-spacing: 30px;">адо</span>
+            <span class="letter-spacing__high-gap">н</span><span class="letter-spacing__low-gap">адо</span>
           </span>
         </h1>
         <div class="main-cover-description">
@@ -58,19 +58,22 @@
         </h2>
         <ul class="main-lots-cards">
           <li>
-            <article class="main-lots-cards-template">
-              <div class="main-lots-cards__align-left background-img-brightness-low"></div>
-              <h3 class="main-lots-cards-title">
-                Фильм режиссёра, который бросил киношколу
-              </h3>
-              <p class="main-lots-cards-description">
-                Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
-              </p>
-            </article>
+            <a href="#" class="text-default">
+              <article class="main-lots-cards-template main-lots-cards__align-left">
+                <div class="background-img-brightness-low">
+                </div>
+                <h3 class="main-lots-cards-title">
+                  Фильм режиссёра, который бросил киношколу
+                </h3>
+                <p class="main-lots-cards-description">
+                  Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
+                </p>
+              </article>
+            </a>
           </li>
           <li>
-            <article class="main-lots-cards-template">
-              <div class="background-img-brightness-low main-lots-cards__align-center"></div>
+            <article class="main-lots-cards-template main-lots-cards__align-center">
+              <div class="background-img-brightness-low"></div>
               <h3 class="main-lots-cards-title">
                 Книга, где описан один скучный день из жизни рекламного агента
               </h3>
@@ -80,8 +83,8 @@
             </article>
           </li>
           <li>
-            <article class="main-lots-cards-template">
-              <div class="background-img-brightness-low main-lots-cards__align-right"></div>
+            <article class="main-lots-cards-template main-lots-cards__align-right">
+              <div class="background-img-brightness-low"></div>
               <h3 class="main-lots-cards-title">
                 Картина, которую повторит даже 5-летний сын маминой подруги
               </h3>
@@ -91,9 +94,9 @@
             </article>
           </li>
         </ul>
-        <div class="main-lots-more-button">
-          <p>посмотреть больше</p>
-        </div>
+        <a href="#" class="main-lots-more-button">
+          посмотреть больше
+        </a>
       </section>
       <section class="main-about" id="main-about-link">
         <div class="main-about-logo">
@@ -118,12 +121,12 @@
       </address>
       <nav>
         <ul class="footer-navigation">
-          <li><a href="#main-cover-link" style="text-decoration: none;">главная</a></li>
+          <li><a href="#main-cover-link" class="text-default">главная</a></li>
           <li><a href="#main-lots-link">посмотреть лоты</a></li>
           <li><a href="#main-about-link">об аукционе</a></li>
         </ul>
       </nav>  
-      <ul class="footer-social-media" style="list-style: none;">
+      <ul class="footer-social-media list-style-none">
         <li><a href="#"><img src="images/yt.svg" alt="Изображение-ссылка YouTube"></a></li>
         <li><a href="#"><img src="images/vk.svg" alt="Изображение-ссылка VK"></a></li>
         <li><a href="#"><img src="images/pinterest.svg" alt="Изображение-ссылка Pinterest"></a></li>
