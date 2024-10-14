@@ -3,7 +3,6 @@
 }
  
 .header {
-    width: 100%;
     margin: 92px 24px 96px;
     display: flex;
     align-items: center;
@@ -61,8 +60,8 @@
     width: 100%;
     height: 100%;
     background-image: url("../images/cover.jpg");
-    z-index: -1;
-    background-size: 125% 100%;
+    z-index: 0;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -72,7 +71,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.6);
     z-index: 1;
 }
 
@@ -165,7 +164,7 @@
     flex-direction: column;
     justify-content: space-between;
     width: 334px;
-    height: 563px;
+    min-height: 563px;
     z-index: 0;
     background-position: center;
     background-size: cover;
